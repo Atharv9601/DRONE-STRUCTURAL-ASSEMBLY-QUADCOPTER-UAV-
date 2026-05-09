@@ -1,19 +1,17 @@
-# DRONE STRUCTURAL ASSEMBLY (QUADCOPTER UAV) 🚁
+# QUADCOPTER UAV – STRUCTURAL ASSEMBLY 🚁🧩
 
 ## 1. Overview
 
-The **Quadcopter UAV Structural Assembly** project focuses on designing a **fully integrated drone body** in CAD, including modular motor arms, a central payload/battery enclosure, and structural interfaces for electronics and mounting hardware.  
-The goal is to create a concept that is **lightweight, modular, and manufacturable**, while keeping enough structural integrity for real‑world use.
+The **Quadcopter UAV Structural Assembly** project focuses on designing a lightweight, modular drone frame using 3D CAD tools. 
+The work covers **motor arm design, central payload enclosure, and assembly‑friendly interfaces** suitable for fabrication and lab testing.
+
 ---
 
 ## 2. Aim 🎯
 
-- Design a **complete quadcopter UAV body structure** that:
-  - Integrates **four motor mount arms**, a **central hub**, and **payload/electronics housing**.  
-  - Provides **clearances and mounting points** for motors, ESCs, flight controller, and battery.  
-  - Is optimised for **lightweight assembly, maintainability, and structural clearance validation**. 
-
-- Demonstrate skills in **multi‑body assembly design**, **GD&T‑aware interfaces**, and **DFMA‑oriented structural design** within CATIA V5. 
+- Develop a **quadcopter frame** that supports four motors, a central electronics bay, and landing elements within a compact envelope.
+- Use CAD to create a **modular structure** that is easy to assemble, disassemble, and adapt to different component layouts. 
+- Produce a complete **assembly and drawing set** ready for manufacturing and portfolio documentation.
 
 ---
 
@@ -21,111 +19,91 @@ The goal is to create a concept that is **lightweight, modular, and manufacturab
 
 ### Software
 
-- **CATIA V5**
-  - Part Design  
-  - Assembly Design  
+- 3D CAD: **CATIA V5 (Part Design, Assembly Design)**
 
-### Core Skills Used
+### Core Skills
 
-- Multi‑body **3D assembly design** and constraint setup.  
-- **Modular component design** for easy assembly/disassembly.  
-- BOM generation and **2D manufacturing drawing creation**.  
-- Fit, clearance, and basic **tolerance validation** across arms and payload areas.  
-- Lightweight structural design thinking for UAV applications.
----
-
-## 4. Structural Components & Layout 🧩
-
-Key elements of the assembly:
-
-- **Central hub / main body**  
-  - Houses flight controller, receiver, ESCs, and wiring.  
-  - Provides mounting bosses, standoffs, and cable routing paths.  
-
-- **Motor arms (x4)**  
-  - Radial arms extending from the central hub.  
-  - Designed for **modular removal and replacement** (e.g., after a crash).  
-  - Incorporate mounting patterns for brushless motors and wire channels.  
-
-- **Payload & battery compartment**  
-  - Enclosure or tray for battery pack and potential payload (e.g., camera or sensors).  
-  - Designed with CG (center of gravity) considerations for stable flight.  
-
-- **Landing features**  
-  - Basic landing legs/feet or provisions for attaching landing gear.  
-
-- **Assembly hardware**  
-  - Screws, spacers, and fittings represented in simplified form for clearance checks.  
-
-All parts are created with **3D printing or light fabrication** in mind, balancing strength and mass. 
----
-
-## 5. Modelling Workflow 🧱
-
-1. **Concept & layout**  
-   - Define **propeller diameter, motor spacing, and arm length** based on a target UAV size.  
-   - Fix the position of the **battery and payload** to maintain good CG.  
-
-2. **Part Design in CATIA V5**  
-   - Model the **central hub**, **motor arms**, and **payload mounts** as individual parts.  
-   - Add fillets, chamfers, and pocketing for weight reduction.  
-
-3. **Assembly Design**  
-   - Assemble all parts with appropriate constraints: concentric, coincident, offset, and angle constraints.  
-   - Verify that all motors, props, and arms have sufficient **clearance**.  
-
-4. **Fit & clearance validation**  
-   - Check installation space for electronics and wiring.  
-   - Ensure no interference between arms, payload, and any optional landing gear.  
-
-5. **Documentation**  
-   - Generate a **BOM** for all structural parts.  
-   - Prepare **2D drawings** for manufacturing or 3D printing as needed. 
+- Multi‑body assembly design and constraints in CATIA V5. 
+- Lightweight structural modelling with ribs, fillets, and mounting bosses.
+- 2D manufacturing drawing creation and BOM generation for all structural parts.
 
 ---
 
-## 6. Key Features & Engineering Highlights 🌟
+## 4. Structural Architecture 🧱
+
+Main elements of the quadcopter structure:
+
+- **Central frame / payload enclosure**  
+  - Core body that houses flight controller, ESCs, battery, and wiring. 
+  - Includes mounting points, ventilation cut‑outs, and cable routing paths.
+
+- **Motor arms**  
+  - Four arms extending from the central frame, each carrying a motor at the tip.
+  - Geometry optimised in CAD for stiffness with minimal material, using thickness, ribs, and fillets.
+
+- **Motor mounts**  
+  - End‑plates or dedicated mounts at each arm tip with hole patterns for standard brushless motors.
+  - Designed to keep propellers clear of the frame and other components.
+
+- **Landing elements**  
+  - Simple landing skids or pads attached to the frame to protect the payload and props during touchdown.
+
+- **Fasteners & interfaces**  
+  - Bolt patterns and bosses defined so arms can be bolted to the central frame for easy replacement. 
+  - Standard fastener sizes used across the design to simplify assembly.
+
+---
+
+## 5. Modelling Workflow 🧩
+
+1. **Define envelope & layout**  
+   - Set overall diagonal size, propeller diameter, and desired payload bay dimensions.
+   - Fix arm angles (typically 90°) and motor positions relative to the centre of gravity.
+
+2. **Part modelling**  
+   - Model central frame, arms, mounts, and landing elements as separate parts in CATIA V5 Part Design.
+   - Use parametric dimensions for arm length, wall thickness, and mounting hole positions.
+
+3. **Assembly creation**  
+   - Assemble all parts in CATIA V5 Assembly Design using suitable mates and constraints.
+   - Check alignment of motors, props, and payload to ensure geometric balance and clearance.
+
+4. **Clearance & interference checks**  
+   - Verify that propeller disks do not intersect the frame, arms, or each other.
+   - Confirm that battery, controller, and wiring have sufficient space inside the central enclosure.
+
+5. **Detailing & documentation**  
+   - Create **2D drawings** for arms, central frame, and mounts with full dimensions and annotations.
+   - Prepare an assembly drawing with exploded view and **ballooned BOM** for all structural components.
+
+---
+
+## 6. Key Features & CAD Highlights 🌟
 
 - **Modular arm design**  
-  - Each arm is designed as a **replaceable module**, enabling easy maintenance or upgrade of individual sections without redesigning the entire frame.
+  - Arms are bolted to the central frame, allowing easy replacement or length changes within the same CAD model.
 
-- **Lightweight structural strategy**  
-  - Material is removed where not needed (pockets, cut‑outs) while maintaining stiffness around:
-    - Motor mounts  
-    - Hub joints  
-    - Battery/payload mounting areas. 
+- **Lightweight yet manufacturable**  
+  - Structural members use simple cross‑sections, ribs, and fillets that are suitable for 3D printing or basic machining.
 
-- **Clearance & tolerance‑aware design**  
-  - Sufficient spacing between:
-    - Propeller disks  
-    - Arms and central hub  
-    - Payload and landing structures  
-  - Mating interfaces modelled with **GD&T awareness** for more realistic assembly expectations.
+- **Component‑aware geometry**  
+  - Motor mount patterns, electronics mounting holes, and cable routing are designed around realistic component sizes.
 
-- **Electronics‑ready layout** ⚙️  
-  - Central hub provides realistic space for:
-    - Flight controller  
-    - ESCs  
-    - Power distribution and wiring  
-  - Routing paths are considered so cables do not interfere with props or moving parts.
-
-- **Portfolio‑friendly concept**  
-  - Serves as a great example of **UAV‑related structural design**, showing that you can think about mechanics, packaging, and future integration with avionics. 
+- **Portfolio‑ready documentation**  
+  - Includes clean CAD assemblies, 2D drawings, and BOMs, making the project ideal for showcasing **structural CAD skills** on a UAV platform.
 
 ---
 
 ## 7. Possible Extensions 🚀
 
-- Integrate selection and placement of **actual motors, ESCs, and battery models** from datasheets.  
-- Run basic **FEA** on arms and hub to identify stress hotspots under load and during a typical landing.  
-- Add **camera gimbal or sensor mounts** to convert it into a more application‑specific UAV.  
-- Refine the design for **CFD compatibility** to study airflow around arms and body.  
-
+- Add detailed **battery mounting and quick‑release mechanisms** in the central bay.  
+- Introduce **foldable or detachable arms** for easier transport, driven by the same parametric model.
+- Create rendered views showing assembled drone with motors and props for presentation slides.
 ---
 
 ## 8. Author 👨‍💻
 
 **Atharv Nitin Agashe**  
 Mechanical Design Engineer · M.Sc. Mechatronics & Robotics  
-- Email: `atharvagashe962001@gmail.com`  
+- Email: `atharvagashe962001@gmail.com`
 - LinkedIn: [www.linkedin.com/in/atharv-agashe9601](https://www.linkedin.com/in/atharv-agashe9601)
